@@ -1,0 +1,513 @@
+*,*::after,*::before{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "system-ui";
+    background-color: #F5F5F5;
+}
+.navbar{
+    background-color: black;
+    position: fixed;
+    z-index: 44;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand{
+    font-size: 29px;
+    font-weight: 600;
+}
+.navList{
+    justify-content: flex-end;
+}
+.navbar-expand-lg .navbar-collapse{
+     justify-content: flex-end;
+}
+.nav-item{
+    position: relative;
+    margin-inline: 5px;
+}
+.navList>ul>li>a{
+    color:white !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: none;
+}
+.navbar-toggler-icon .icon{
+    color: white;
+}
+ .navList>ul>li>.active::before{
+     content:"";
+     position: absolute;
+     width:100%;
+     height: 2px;
+     bottom: 0;
+    left: 0;
+    background-color:white;
+ }
+   .navList>ul>li>a:not(.active)::before{
+     content:"";
+     position: absolute;
+     width:0;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+    background-color:white;
+       
+   }
+
+ .navList>ul>li>a:not(.active):hover::before
+{
+     width: 100%;
+     transition: all 1s ease-in-out;
+}
+.f-s{
+    background-image: url(../imgs/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative; 
+    background-attachment: fixed;
+}
+#home .overlay{
+  background-color: rgba(0, 0, 0, 0.559);
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh);
+}
+.text{
+    position: relative;
+    margin-top: -80px;
+}
+h1{
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+h1:after{
+    content:"";
+    position: absolute;
+    bottom: -50px;
+    left:40%;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    animation: names 10s  infinite ease-in-out alternate-reverse;
+}
+@keyframes names{
+    0% { content:"pho|";}
+  2% {  content:"photo|"; }
+  4%   { content:"photogra|";  }
+  6%   {content:"photograph|";  }
+  8%   { content:"photographer|"; }
+  10%  {content:"photographer"; }
+  12%  { content:"photographer|"; }
+  14%  { content:"photographer"; }
+  16%  { content:"photographer|"; }
+  18%  {  content:"photograph|";}
+  20%  { content:"photogra|";  }
+  22%  { content:"photo|"; }
+  24%  { content:"pho|"; }
+  26%  {  content:"|";}
+  28%  {content:"";  }
+  30%  { content:"|";}
+  32%  {  content:"Des|";  }
+  34%  {  content:"Desi|"; }
+  36%  { content:"Desinge|";  }
+  38%  { content:"Desinger|"; }
+  40%  {  content:"Desinger";  }
+  42%  {  content:"Desinger|"; }
+  44%  {  content:"Desing|"; }
+  46%  {  content:"Des|";  }
+  48%  {  content:"D|"; }
+  50%  {  content:"|"; }
+  52%  {   content:"";   }
+  54%  {   content:"|";  }
+  56%  {  content:"Fre|";   }
+  58%  {  content:"Freel|";  }
+  60%  {  content:"Freelan|";  }
+  62%  {  content:"Freelance|"; }
+  64%  {  content:"Freelancer|";  }
+  66%  {  content:"Freelancer";}
+  68%  {  content:"Freelancer|"; }
+  70%  { content:"Freelanc|"; }
+  72%  { content:"Freela|";}
+  74%  {  content:"Free|"; }
+  76%  {   content:"F|"; }
+  78%  { content:"|";  }
+  80%  { content:"";}
+  82%  { content:"|";  }
+  84%  { content:"Dev";}
+  86%  {  content:"Devel|";}
+  88%  { content:"Develop|";  }
+  90%  { content:"Developer|";}
+  92%  {  content:"Developer"; }
+  93%  { content:"Developer|"; }
+  94%  { content:"Develo|";  }
+  95%  { content:"Deve|"; }
+  96% { content:"Dev|"; }
+  97% {  content:"D|"; }
+  98% { content:"|"; }
+  99% { content:""; }
+  100% { content:"|"; }
+}
+.a-c{
+    background-color:white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.224) ;
+    padding: 60px;
+}
+.progress{
+    border-radius: 0;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    height: 0.7rem !important;
+}
+.img{
+    width: 65%;
+}
+.info p{
+   font-size:17.6px;
+   font-weight: 600;
+}
+.info p span{
+    color: rgb(78, 78, 78);
+    font-size: 16px;
+    font-weight: 400;
+}
+.a-c h4{
+    font-size: 17.6px;
+    font-weight: 600;
+    color:black;
+    margin-block: 20px;
+}
+.a-a{
+    position: relative;
+}
+.a-a h2{
+    margin-bottom: 50px;
+}
+.a-a h2::after{
+   content:"";
+   position: absolute;
+   width:17%;
+   height: 3px;
+   background-color: #0078FF;
+   top:48px;
+   left:0;
+}
+.a-a p{
+    font-size: 20px;
+    font-weight: 300;
+    color:#4E4E4E;
+}
+.about{
+    padding: 70px;
+}
+.r2 span{
+    color: #4e4e4e;
+}
+.card .icon-container{
+  border:10px solid #0078FF;
+  color:#0c2c51
+}
+.card .icon{
+    font-size: 40px;
+}
+.card:hover .icon-container{
+    background-color: #0078FF;
+    color: white;
+    border-color: #d1e4f9;
+}
+.card{
+    border-radius: 22px;
+    text-align: center;
+}
+.card-body h2{
+    font-size: 22.4px;
+     font-weight: 500;
+}
+.card-body p{
+   color: #4E4E4E;
+   font-size: 16px;
+   font-weight: 400;
+}
+#services{
+    position: relative;
+}
+.container .text p::after{
+    content:"";
+    position: absolute;
+    width: 5%;
+    height: 7px;
+    background-color: #0078FF;
+    bottom:-2px;
+    left:48%;
+}
+#services h3{
+    font-size:48px;
+    font-weight: 700;
+}
+.fixed-section{
+    background-image: url(../imgs/counters-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fixed-section .overlay{
+    background-color: #0559b8b3;
+    padding-block:128px;
+} 
+.fixed-section .containt{
+    text-align: center;
+    color:white;
+    margin: 20px;
+}
+.rounded-container{
+    border:10px solid #d1e4f9;
+}
+.fixed-section .p{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.fixed-section .span{
+   font-size: 16px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 400;
+   margin-top: 0;
+}
+#work{
+    position: relative;
+    padding-top: 54px;
+}
+.container .text p::after{
+    content:"";
+    position: absolute;
+    width: 5%;
+    height: 7px;
+    background-color: #0078FF;
+    bottom:-2px;
+    left:48%;
+}
+#work h3{
+    font-size:48px;
+    font-weight: 700;
+}
+#work .card{
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+}
+
+.card-img, .card-img-top{
+    border-radius: 0;
+}
+.work-body{
+    text-align: start;
+}
+.work-ico{
+    color:#0078FF;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    padding:6px 9px;
+}
+.work-body .f-sp{
+    color:#0078FF;
+}
+#work .card:hover img{
+  transform: scale(130%);
+  transition:transform 0.6s ease-in-out;
+}
+.carsol{
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.carsol .overlay{
+    background-color: #0559b8b3;
+     height: 85vh;
+}
+.img{
+    width: 100%;
+    overflow: hidden;
+}
+.img-carsol{
+    width: 25%;
+    margin-left: 44%;
+    margin-top: 11%;
+}
+.img-carsol img{
+    height: 120px;
+}
+.carousel-caption p{
+    font-size: 28px;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.carousel-indicators button{
+    width:8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+}
+.carsol .img2{
+    margin-left: 46%;
+}
+.imgfooter img{
+    width: 30px;
+    border-radius: 50%;
+}
+#blog .card{
+    overflow: hidden;
+}
+#blog .card{
+    border-radius: 10px;
+    position: relative;
+}
+#blog .card-body h3 a{
+    text-decoration: none;
+    color:black;
+     font-size: 20.8px;
+    font-weight:500;
+}
+#blog .img::after{
+    content:"Travel";
+    background-color: #0078FF;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:42%;
+    padding:5px 8px;
+    font-weight: 500;
+    font-size: 11.6px;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+#blog .si::after{
+    content:"Web Design";
+    background-color: #0078FF;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:42%;
+    padding:5px 8px;
+    font-weight: 500;
+    font-size: 11.6px;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+#blog .ti::after{
+    content:"Web Design";
+    background-color: #0078FF;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:42%;
+    padding:5px 8px;
+    font-weight: 500;
+    font-size: 11.6px;
+    text-transform: uppercase;
+    border-radius: 10%;
+}
+#blog h3{
+    font-size:48px;
+    font-weight: 700;
+}
+#blog{
+    margin-top:5%;
+}
+.endsection{
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.endsection .overlay{
+    background-color: #0559b8b3;
+    padding: 128px;
+}
+.endsection .container{
+    padding-block: 50px !important;
+}
+.endsection .header h5{
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 40px;
+}
+.endsection .header h5::after{
+    content:"";
+    width:15%;
+    height: 4px;
+    position: absolute;
+    bottom:-10px;
+    left:0;
+    background-color: #0078FF;
+
+}
+.endsection .content p{
+    font-size: 20px;
+    font-weight: 300;
+    color:#4E4E4E;
+}
+.endsection .content .icon ul {
+    padding-left: 0;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.endsection .content .icon ul li{
+   list-style: none;
+   color:#4E4E4E;
+}
+.endsection .content .icon ul li span{
+    color:#0077ffb0;
+    padding-right: 5px;
+    text-align: start;
+}
+.social{
+    list-style: none;
+    padding-left: 0;
+}
+.social-itam{
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    padding:8px 12px;
+    margin-right: 8px;
+}
+.endsection .form{
+    line-height: 1.5;
+}
+.endsection .form .input {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.endsection .form textarea{
+    height: 126px;
+}
+.endsection .form .btn{
+    background-color: #0078FF;
+    color: white;
+    border-radius: 20px;
+    padding:10px 15px;
+    margin-left: 40%;
+}
+footer{
+    line-height: 10px;
+    padding-block:25px;
+    background-color: #0452ab;
+    color:white;
+     box-shadow: 20px 10px 30px #000000ba;
+}
